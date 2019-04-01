@@ -6,112 +6,225 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Discoverer</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- https://semantic-ui.com/modules/dropdown.html#/examples -->
+    <link rel="stylesheet" type="text/css" href="css/components/dropdown.min.css">
+    <link rel="stylesheet" type="text/css" href="css/components/sidebar.min.css">
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/semantic.min.js"></script>
+    <script src="js/dropdown.min.js"></script>
+    <script src="js/sidebar.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
+    <div class="ui sidebar">
+        <ul class="site-nav-menu">
+            <li>Discover Where's Next</li>
+            <li>Explore Destinations</li>
+        </ul>
+    </div>
+
     <!-- https://dribbble.com/shots/4133816-The-Discoverer-Landing-Page -->
-    <header>
-        <nav>
-            <img class="hamburger" src="assets/icons/luggage.svg" alt="">
-            <h1 class="site-logo"><span>The</span> Discoverer</h1>
-            <h2>Discover the world from your inbox.</h2>
-            <h3>Discover Where's Next</h3>
-            <h3>Explore Destinations</h3>
-            <img src="assets/icons/facebook.svg" alt="">
-            <img src="assets/icons/twitter.svg" alt="">
-            <img src="assets/icons/instagram.svg" alt="">
-            <button>Subscribe for updates</button>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Looking for a place to discover?</h1>
-            <p>Browse among 80+ cities in 30+ countries</p>
+    <div class="ui pusher">
+        <header>
+            <nav>
+                <div class="hamburger-icon">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg class="luggage" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480"
+                        style="enable-background:new 0 0 480 480;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: #FFB8B8;
+                            }
+                        </style>
+                        <g>
+                            <path class="luggage-fill" d="M107.6,417.9c0,16.6,13.4,30,30,30h209.1c16.6,0,30-13.4,30-30V164.7c0-16.6-13.4-30-30-30H137.6
+		c-16.6,0-30,13.4-30,30V417.9z" />
+                        </g>
+                        <path d="M336,128h-48V40h16c4.4,0,8-3.6,8-8V8c0-4.4-3.6-8-8-8H176c-4.4,0-8,3.6-8,8v24c0,4.4,3.6,8,8,8h16v88h-48
+	c-22.1,0-40,17.9-40,40v248c0,22.1,17.9,40,40,40v16c0,4.4,3.6,8,8,8h32c4.4,0,8-3.6,8-8v-16h96v16c0,4.4,3.6,8,8,8h32
+	c4.4,0,8-3.6,8-8v-16c22.1,0,40-17.9,40-40V168C376,145.9,358.1,128,336,128z M184,16h112v8H184V16z M208,40h64v88h-64V40z M176,464
+	h-16v-8h16V464z M320,464h-16v-8h16V464z M360,416c0,13.3-10.7,24-24,24H144c-13.3,0-24-10.7-24-24V168c0-13.3,10.7-24,24-24h192
+	c13.3,0,24,10.7,24,24V416z" />
+                        <path
+                            d="M240,171c-3.9,0-7.2,3.2-7.2,7.2v221.7c0,3.9,3.2,7.2,7.2,7.2s7.2-3.2,7.2-7.2V178.2C247.2,174.2,243.9,171,240,171z" />
+                        <path d="M297.2,185.3c-3.9,0-7.2,3.2-7.2,7.2v193.1c0,3.9,3.2,7.2,7.2,7.2s7.2-3.2,7.2-7.2V192.5
+	C304.4,188.5,301.2,185.3,297.2,185.3z" />
+                        <path d="M182.8,185.3c-3.9,0-7.2,3.2-7.2,7.2v193.1c0,3.9,3.2,7.2,7.2,7.2c3.9,0,7.2-3.2,7.2-7.2V192.5
+	C189.9,188.5,186.7,185.3,182.8,185.3z" />
+                    </svg>
+                    <p>Menu</p>
+                </div>
+                <div class="site-nav-text">
+                    <h1 class="site-logo"><span>The</span> Discoverer</h1>
+                    <h2>Discover the world from your inbox.</h2>
+                </div>
 
-            <select name="where">
-                <option value="Europe">Europe</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
-            </select>
+                <div class="site-nav-icons">
+                    <img src="assets/icons/facebook.svg" alt="">
+                    <img src="assets/icons/twitter.svg" alt="">
+                    <img src="assets/icons/instagram.svg" alt="">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="locator">
+                <!-- <button>Subscribe for updates</button> -->
+                <div class="locator-text">
+                    <h1>Looking for a place to discover?</h1>
+                    <p>Browse among 80+ cities in 30+ countries</p>
+                </div>
 
-            <select name="when">
-                <option value="January">January</option>
-                <option value="February">February</option>
-                <option value="March">March</option>
-                <option value="April">April</option>
-            </select>
+                <div class="locator-dropdowns">
+                    <div class="ui selection dropdown">
+                            <input type="hidden" name="gender">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">Where</div>
+                            <div class="menu">
+                                <div class="item" data-value="0">Europe</div>
+                                <div class="item" data-value="1">Australia</div>
+                                <div class="item" data-value="2">Asia</div>
+                                <div class="item" data-value="3">North America</div>
+                                <div class="item" data-value="4">South America</div>
+                            </div>
+                        </div>
+        
+                        <div class="ui selection dropdown">
+                            <input type="hidden" name="gender">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">When</div>
+                            <div class="menu">
+                                <div class="item" data-value="1">January</div>
+                                <div class="item" data-value="2">February</div>
+                                <div class="item" data-value="3">March</div>
+                                <div class="item" data-value="4">April</div>
+                                <div class="item" data-value="5">May</div>
+                            </div>
+                        </div>
+                </div>
 
-            <div class="gallery">
-                <div class="gallery__slide">
-                    <img src="assets/blue_black_v.jpg" alt="">
-                    <div class="gallery__text">
-                        <h3>Brasov, Romania</h3>
-                        <p>Gothic</p>
-                        <p>Mystical</p>
-                        <p>Imposing</p>
+                <div class="gallery">
+                    <div class="gallery__slide first">
+                        <picture>
+                            <source srcset="assets/blue_black_h.jpg" media="(max-width: 768px)" />
+                            <source srcset="assets/blue_black_v.jpg" media="(min-width: 769px)" />
+                            <img src="assets/blue_black_v.jpg" />
+                        </picture>
+                        <div class="gallery__text romania">
+                            <h3>Brasov, Romania</h3>
+                            <p>Gothic</p>
+                            <p>Mystical</p>
+                            <p>Imposing</p>
+                        </div>
+                    </div>
+                    <div class="gallery__slide">
+                        <picture>
+                            <source srcset="assets/blue_white_h.jpg" media="(max-width: 768px)" />
+                            <source srcset="assets/blue_white_v.jpg" media="(min-width: 769px)" />
+                            <img src="assets/blue_white_v.jpg" />
+                        </picture>
+                        <div class="gallery__text ireland">
+                            <h3>Kilkenny, Ireland</h3>
+                            <p>Beautiful</p>
+                            <p>Natural</p>
+                            <p>Rustic</p>
+                        </div>
+                    </div>
+                    <div class="gallery__slide">
+                        <picture>
+                            <source srcset="assets/brown_gray_h.jpg" media="(max-width: 768px)" />
+                            <source srcset="assets/brown_gray_v.jpg" media="(min-width: 769px)" />
+                            <img src="assets/brown_gray_v.jpg" />
+                        </picture>
+                        <div class="gallery__text portugal">
+                            <h3>Porto, Portugal</h3>
+                            <p>Cozy</p>
+                            <p>Welcoming</p>
+                            <p>Relaxing</p>
+                        </div>
+                    </div>
+                    <div class="gallery__slide">
+                        <picture>
+                            <source srcset="assets/gray_red_h.jpg" media="(max-width: 768px)" />
+                            <source srcset="assets/gray_red_v.jpg" media="(min-width: 769px)" />
+                            <img src="assets/gray_red_v.jpg" />
+                        </picture>
+
+                        <div class="gallery__text france">
+                            <h3>Paris, France</h3>
+                            <p>Romantic</p>
+                            <p>Historic</p>
+                            <p>Stylish</p>
+                        </div>
+                    </div>
+                    <div class="gallery__slide">
+                        <picture>
+                            <source srcset="assets/green_white_h.jpg" media="(max-width: 768px)" />
+                            <source srcset="assets/green_white_v.jpg" media="(min-width: 769px)" />
+                            <img src="assets/green_white_v.jpg" />
+                        </picture>
+
+                        <div class="gallery__text iceland">
+                            <h3>Reykjavik, Iceland</h3>
+                            <p>Icy</p>
+                            <p>Peaceful</p>
+                            <p>Rugged</p>
+                        </div>
+                    </div>
+                    <div class="gallery__slide">
+                        <picture>
+                            <source srcset="assets/pink_orange_h.jpg" media="(max-width: 768px)" />
+                            <source srcset="assets/pink_orange_v.jpg" media="(min-width: 769px)" />
+                            <img src="assets/pink_orange_v.jpg" />
+                        </picture>
+
+                        <div class="gallery__text italy">
+                            <h3>Rome, Italy</h3>
+                            <p>Classic</p>
+                            <p>Exciting</p>
+                            <p>Tasty</p>
+                        </div>
+                    </div>
+                    <div class="gallery__slide">
+                        <picture>
+                            <source srcset="assets/yellow_white_h.jpg" media="(max-width: 768px)" />
+                            <source srcset="assets/yellow_white_v.jpg" media="(min-width: 769px)" />
+                            <img src="assets/yellow_white_v.jpg" />
+                        </picture>
+
+                        <div class="gallery__text arizona">
+                            <h3>Flagstaff, Arizona</h3>
+                            <p>Peaceful</p>
+                            <p>Beautiful</p>
+                            <p>Bright</p>
+                        </div>
                     </div>
                 </div>
-                <div class="gallery__slide">
-                    <img src="assets/blue_white_v.jpg" alt="">
-                    <div class="gallery__text">
-                        <h3>Brasov, Romania</h3>
-                        <p>Gothic</p>
-                        <p>Mystical</p>
-                        <p>Imposing</p>
-                    </div>
-                </div>
-                <div class="gallery__slide">
-                    <img src="assets/brown_gray_v.jpg" alt="">
-                    <div class="gallery__text">
-                        <h3>Brasov, Romania</h3>
-                        <p>Gothic</p>
-                        <p>Mystical</p>
-                        <p>Imposing</p>
-                    </div>
-                </div>
-                <div class="gallery__slide">
-                    <img src="assets/gray_red_v.jpg" alt="">
-                    <div class="gallery__text">
-                        <h3>Brasov, Romania</h3>
-                        <p>Gothic</p>
-                        <p>Mystical</p>
-                        <p>Imposing</p>
-                    </div>
-                </div>
-                <div class="gallery__slide">
-                    <img src="assets/green_white_v.jpg" alt="">
-                    <div class="gallery__text">
-                        <h3>Brasov, Romania</h3>
-                        <p>Gothic</p>
-                        <p>Mystical</p>
-                        <p>Imposing</p>
-                    </div>
-                </div>
-                <div class="gallery__slide">
-                    <img src="assets/pink_orange_v.jpg" alt="">
-                    <div class="gallery__text">
-                        <h3>Brasov, Romania</h3>
-                        <p>Gothic</p>
-                        <p>Mystical</p>
-                        <p>Imposing</p>
-                    </div>
-                </div>
-                <div class="gallery__slide">
-                    <img src="assets/yellow_white_v.jpg" alt="">
-                    <div class="gallery__text">
-                        <h3>Brasov, Romania</h3>
-                        <p>Gothic</p>
-                        <p>Mystical</p>
-                        <p>Imposing</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </div>
+    <!--/.pusher-->
 
 </body>
+<script> </script><!-- Added to fix Chrome bug that fires transitions on load -->
+<script>
+    $('.ui.selection.dropdown')
+        .dropdown({
+            clearable: true
+        });
+    $('.hamburger-icon').on('click', function () {});
+
+    $('.ui.sidebar').first()
+        .sidebar('attach events', '.hamburger-icon', 'show');
+</script>
 
 </html>
